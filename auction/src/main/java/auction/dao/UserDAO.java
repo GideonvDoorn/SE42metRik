@@ -28,7 +28,7 @@ public interface UserDAO {
      *
      * @return list of user instances
      */
-    List<User> findAll();
+    List findAll();
 
     /**
      *

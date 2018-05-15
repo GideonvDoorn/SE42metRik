@@ -29,6 +29,8 @@ public class AuctionMgrTest {
     @Test
     public void getItem() {
 
+
+
         String email = "xx2@nl";
         String omsch = "omsch";
 

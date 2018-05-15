@@ -4,18 +4,28 @@ import java.util.List;
 import static org.junit.Assert.*;
 
 
+import nl.fontys.util.DatabaseCleaner;
 import org.junit.Before;
 import org.junit.Test;
 
 import auction.domain.User;
 
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.Persistence;
+
 public class RegistrationMgrTest {
 
     private RegistrationMgr registrationMgr;
+    private final EntityManagerFactory emf = Persistence.createEntityManagerFactory("auctionPU");
 
     @Before
     public void setUp() throws Exception {
         registrationMgr = new RegistrationMgr();
+
+        EntityManager em = emf.createEntityManager();
+        DatabaseCleaner dbc = new DatabaseCleaner(em);
+        dbc.clean();
     }
 
     @Test
