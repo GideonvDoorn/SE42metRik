@@ -1,6 +1,7 @@
 package nl.fontys.util;
 
-import auction.domain.User;
+import auction.domain.*;
+
 import javax.persistence.EntityManager;
 import javax.persistence.metamodel.EntityType;
 import java.sql.SQLException;
@@ -8,7 +9,11 @@ import java.sql.SQLException;
 public class DatabaseCleaner {
 
     private static final Class<?>[] ENTITY_TYPES = {
-        User.class
+            Item.class,
+            Bid.class,
+        User.class,
+            Category.class,
+            Account.class
     };
     private final EntityManager em;
 

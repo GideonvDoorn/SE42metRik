@@ -1,19 +1,44 @@
 package auction.domain;
 
 import nl.fontys.util.Money;
+import org.eclipse.persistence.jpa.config.Cascade;
+
+import javax.persistence.*;
+
+
+@Entity
+
+@NamedQueries({
+        @NamedQuery(name = "Item.getCount", query = "SELECT COUNT(a) FROM Item AS a"),
+        @NamedQuery(name = "Item.findById", query = "SELECT a FROM Item AS a WHERE a.id = :id"),
+        @NamedQuery(name = "Item.findByDescr", query = "SELECT a FROM Item AS a WHERE a.description = :descr"),
+        @NamedQuery(name = "Item.getAll", query = "SELECT a FROM Item AS a")
+
+})
 
 public class Item implements Comparable {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private Long id;
+    @ManyToOne(cascade = CascadeType.PERSIST)
     private User seller;
+    @ManyToOne(cascade = CascadeType.PERSIST)
     private Category category;
+
     private String description;
+
+    @OneToOne(cascade = CascadeType.PERSIST)
     private Bid highest;
 
     public Item(User seller, Category category, String description) {
         this.seller = seller;
         this.category = category;
         this.description = description;
+    }
+
+    public Item(){
+
     }
 
     public Long getId() {
@@ -30,6 +55,10 @@ public class Item implements Comparable {
 
     public String getDescription() {
         return description;
+    }
+
+    public void setDescription(String descr){
+        description = descr;
     }
 
     public Bid getHighestBid() {

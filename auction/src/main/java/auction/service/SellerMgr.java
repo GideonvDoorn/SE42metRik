@@ -1,10 +1,18 @@
 package auction.service;
 
+import auction.dao.ItemDAOJPAImpl;
 import auction.domain.Category;
 import auction.domain.Item;
 import auction.domain.User;
 
 public class SellerMgr {
+
+    ItemDAOJPAImpl DAO;
+
+    public SellerMgr(){
+        DAO = new ItemDAOJPAImpl();
+    }
+
 
     /**
      * @param seller
@@ -14,8 +22,12 @@ public class SellerMgr {
      *         en met de beschrijving description
      */
     public Item offerItem(User seller, Category cat, String description) {
-        // TODO 
-        return null;
+
+        Item newItem = new Item(seller, cat, description);
+
+        DAO.create(newItem);
+
+        return newItem;
     }
     
      /**
@@ -23,8 +35,12 @@ public class SellerMgr {
      * @return true als er nog niet geboden is op het item. Het item word verwijderd.
      *         false als er al geboden was op het item.
      */
-    public boolean revokeItem(Item item) {
-        // TODO 
-        return false;
-    }
+     public boolean revokeItem(Item item) {
+         if(item.getHighestBid() == null)
+         {
+             DAO.remove(item);
+             return true;
+         }
+         return false;
+     }
 }

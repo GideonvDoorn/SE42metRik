@@ -8,6 +8,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../auction/src/main/java/auction/dao/ItemDAOJPAImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../auction/src/main/java/auction/dao/UserDAO.java">
           <value>
             <set />
@@ -18,7 +23,27 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../auction/src/main/java/auction/domain/Bid.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../auction/src/main/java/auction/domain/Category.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../auction/src/main/java/auction/domain/Item.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../auction/src/main/java/auction/domain/User.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../auction/src/main/java/auction/service/AuctionMgr.java">
           <value>
             <set />
           </value>
@@ -28,7 +53,17 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../auction/src/main/java/auction/service/SellerMgr.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../auction/src/main/java/nl/fontys/util/DatabaseCleaner.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../auction/src/main/java/nl/fontys/util/FontysTime.java">
           <value>
             <set />
           </value>
@@ -54,6 +89,21 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/../auction/src/test/java/auction/service/RegistrationMgrTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../auction/src/test/java/auction/service/SellerMgrTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../auction/src/test/java/auction/service/TestUtil.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/test/java/Assignments/Assignment_01.java">
           <value>
             <set />
           </value>
