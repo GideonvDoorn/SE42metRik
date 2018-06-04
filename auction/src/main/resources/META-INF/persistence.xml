@@ -7,6 +7,8 @@
       <class>auction.domain.Item</class>
       <class>auction.domain.Category</class>
     <class>auction.domain.Account</class>
+    <class>auction.domain.Team</class>
+    <class>auction.domain.Speler</class>
 
     <shared-cache-mode>NONE</shared-cache-mode>
     <properties>

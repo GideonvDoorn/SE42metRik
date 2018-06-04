@@ -38,6 +38,16 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../auction/src/main/java/auction/domain/Speler.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../auction/src/main/java/auction/domain/Team.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../auction/src/main/java/auction/domain/User.java">
           <value>
             <set />
@@ -88,6 +98,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../auction/src/test/java/auction/service/ItemsFromSellerTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../auction/src/test/java/auction/service/RegistrationMgrTest.java">
           <value>
             <set />
@@ -99,6 +114,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/../auction/src/test/java/auction/service/TestUtil.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/bank/domain/Account.java">
           <value>
             <set />
           </value>

@@ -1,15 +1,10 @@
 package bank.domain;
 
 import java.io.Serializable;
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.NamedQueries;
-import javax.persistence.NamedQuery;
+import javax.persistence.*;
 
 @Entity
+@Table(name = "accounts")
 @NamedQueries({
     @NamedQuery(name = "Account.getAll", query = "select a from Account as a"),
     @NamedQuery(name = "Account.count", query = "select count(a) from Account as a"),

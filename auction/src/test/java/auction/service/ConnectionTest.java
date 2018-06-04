@@ -2,10 +2,7 @@ package auction.service;
 
 import auction.dao.ItemDAOJPAImpl;
 import auction.dao.UserDAOJPAImpl;
-import auction.domain.Account;
-import auction.domain.Category;
-import auction.domain.Item;
-import auction.domain.User;
+import auction.domain.*;
 import nl.fontys.util.DatabaseCleaner;
 import org.junit.Before;
 import org.junit.Test;
@@ -43,19 +40,15 @@ public class ConnectionTest {
         em = emf.createEntityManager();
         em1 = emf.createEntityManager();
     }
+    
+
 
     @Test
     public void TestConnection(){
         em = emf.createEntityManager();
 
-        User user = new User("mail");
-        em.getTransaction().begin();
+        User seller = new User("m@m.com");
 
-        em.persist(user);
-        assertNull(user.getId());
-        em.getTransaction().commit();
-
-        assertTrue(user.getId() > 0L);
 
 
     }

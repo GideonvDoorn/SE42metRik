@@ -4,6 +4,7 @@ import nl.fontys.util.Money;
 import org.eclipse.persistence.jpa.config.Cascade;
 
 import javax.persistence.*;
+import java.util.Objects;
 
 
 @Entity
@@ -21,7 +22,7 @@ public class Item implements Comparable {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private Long id;
-    @ManyToOne(cascade = CascadeType.PERSIST)
+    @ManyToOne
     private User seller;
     @ManyToOne(cascade = CascadeType.PERSIST)
     private Category category;
@@ -35,6 +36,9 @@ public class Item implements Comparable {
         this.seller = seller;
         this.category = category;
         this.description = description;
+        seller.addItem(this);
+
+
     }
 
     public Item(){
@@ -78,13 +82,18 @@ public class Item implements Comparable {
         return -1;
     }
 
-    public boolean equals(Object o) {
-        //TODO
-        return false;
+    public boolean equals(Object obj) {
+
+        if(obj == null || obj.getClass() != this.getClass()){
+            return false;
+        }
+
+        Item i = (Item)obj;
+
+        return this.id.equals(i.id)  && this.category.equals(i.category)&& this.description.equals(i.description)&& this.highest.equals(i.highest);
     }
 
     public int hashCode() {
-        //TODO
-        return 0;
+        return Objects.hash(id, category, description, highest);
     }
 }

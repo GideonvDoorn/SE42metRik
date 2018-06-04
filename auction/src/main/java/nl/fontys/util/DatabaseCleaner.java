@@ -14,6 +14,7 @@ public class DatabaseCleaner {
         User.class,
             Category.class,
             Account.class
+
     };
     private final EntityManager em;
 
