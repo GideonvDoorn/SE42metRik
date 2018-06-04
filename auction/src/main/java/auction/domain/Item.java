@@ -8,7 +8,7 @@ import java.util.Objects;
 
 
 @Entity
-
+@Inheritance (strategy = InheritanceType.JOINED)
 @NamedQueries({
         @NamedQuery(name = "Item.getCount", query = "SELECT COUNT(a) FROM Item AS a"),
         @NamedQuery(name = "Item.findById", query = "SELECT a FROM Item AS a WHERE a.id = :id"),
@@ -90,7 +90,7 @@ public class Item implements Comparable {
 
         Item i = (Item)obj;
 
-        return this.id.equals(i.id)  && this.category.equals(i.category)&& this.description.equals(i.description)&& this.highest.equals(i.highest);
+        return this.id.equals(i.id)  && this.category.equals(i.category)&& this.description.equals(i.description)&& (this.highest == i.highest || this.highest.equals(i.highest));
     }
 
     public int hashCode() {

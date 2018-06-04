@@ -1,9 +1,7 @@
 package auction.service;
 
 import auction.dao.ItemDAOJPAImpl;
-import auction.domain.Category;
-import auction.domain.Item;
-import auction.domain.User;
+import auction.domain.*;
 
 public class SellerMgr {
 
@@ -29,7 +27,21 @@ public class SellerMgr {
 
         return newItem;
     }
-    
+
+    public Item offerFurniture(User seller, Category cat, String description, String material){
+        Furniture newFurniture = new Furniture(seller, cat, description, material);
+
+        DAO.create(newFurniture);
+
+        return newFurniture;
+    }
+    public Item offerPainting(User seller, Category cat, String description, String title ,String painter){
+        Painting newPainting = new Painting(seller, cat, description, title, painter);
+
+        DAO.create(newPainting);
+
+        return newPainting;
+    }
      /**
      * @param item
      * @return true als er nog niet geboden is op het item. Het item word verwijderd.

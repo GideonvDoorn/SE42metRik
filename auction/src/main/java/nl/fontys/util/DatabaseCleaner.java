@@ -13,7 +13,9 @@ public class DatabaseCleaner {
             Bid.class,
         User.class,
             Category.class,
-            Account.class
+            Account.class,
+            Furniture.class,
+            Painting.class
 
     };
     private final EntityManager em;

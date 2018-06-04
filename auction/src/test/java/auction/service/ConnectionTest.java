@@ -40,7 +40,7 @@ public class ConnectionTest {
         em = emf.createEntityManager();
         em1 = emf.createEntityManager();
     }
-    
+
 
 
     @Test
