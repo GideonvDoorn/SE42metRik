@@ -138,6 +138,26 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../../../../SE42/codeSamples/CalculatorClient/src/test/java/nl/fhict/se42/calculatorclient/WebServiceMethods.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../../SE42/codeSamples/CalculatorClient/src/test/java/nl/fhict/se42/calculatorclient/WebServiceTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../../SE42/codeSamples/CalculatorService/src/main/java/calculatorclient/WebServiceMethods.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../../SE42/codeSamples/CalculatorService/src/main/java/calculatorclient/WebServiceTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
       </map>
     </option>
   </component>
