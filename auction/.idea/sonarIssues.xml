@@ -8,6 +8,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/auctionWebService/src/main/java/com/auction/AuctionApplication.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/main/java/auction/dao/ItemDAOJPAImpl.java">
           <value>
             <set />

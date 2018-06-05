@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/auction.iml" filepath="$PROJECT_DIR$/auction.iml" />
       <module fileurl="file://$PROJECT_DIR$/auctionWebService/auctionWebService.iml" filepath="$PROJECT_DIR$/auctionWebService/auctionWebService.iml" />
+      <module fileurl="file://$PROJECT_DIR$/auctionWebService/auctionWebService.iml" filepath="$PROJECT_DIR$/auctionWebService/auctionWebService.iml" />
     </modules>
   </component>
 </project>
