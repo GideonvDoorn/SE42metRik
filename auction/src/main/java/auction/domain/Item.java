@@ -1,9 +1,14 @@
 package auction.domain;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import nl.fontys.util.Money;
 import org.eclipse.persistence.jpa.config.Cascade;
 
 import javax.persistence.*;
+import javax.xml.bind.annotation.XmlRootElement;
 import java.util.Objects;
 
 
@@ -16,6 +21,8 @@ import java.util.Objects;
         @NamedQuery(name = "Item.getAll", query = "SELECT a FROM Item AS a")
 
 })
+@XmlRootElement
+@JsonIgnoreProperties(ignoreUnknown = true)
 
 public class Item implements Comparable {
 
@@ -94,6 +101,11 @@ public class Item implements Comparable {
     }
 
     public int hashCode() {
-        return Objects.hash(id, category, description, highest);
+        return Objects.hash(id, category, description);
+    }
+
+    @Override
+    public String toString() {
+        return "Id: " + id + " | Seller: " + seller.getEmail();
     }
 }

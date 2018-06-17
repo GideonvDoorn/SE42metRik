@@ -8,7 +8,67 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../../../../../JavaTestProjects/gs-rest-service-master/complete/src/main/java/com/app/Application.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../../../JavaTestProjects/gs-rest-service-master/complete/src/main/java/com/app/Goodbye.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../../../JavaTestProjects/gs-rest-service-master/complete/src/main/java/com/app/Greeting.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../../../JavaTestProjects/gs-rest-service-master/complete/src/main/java/com/app/GreetingController.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../../../JavaTestProjects/gs-rest-service-master/complete/src/main/java/com/app/USerDB.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../../../JavaTestProjects/gs-rest-service-master/complete/src/main/java/com/client/ServiceClient.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/auctionWebService/src/main/java/com/auction/AuctionApplication.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/auctionWebService/src/main/java/com/auction/AuctionController.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/auctionWebService/src/main/java/com/auction/RegistrationController.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/auctionWebService/src/main/java/com/client/AuctionWebServiceImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/auctionWebService/src/test/java/com/auction/AuctionApplicationTests.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/auctionWebService/src/test/java/com/client/AuctionWebServiceImplTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/pom.xml">
           <value>
             <set />
           </value>
@@ -159,6 +219,56 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/../../../../SE42/codeSamples/CalculatorService/src/main/java/calculatorclient/WebServiceTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../../SE42/codeSamples/auctionRestservice/AuctionModels/src/User.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../../SE42/codeSamples/auctionRestservice/AuctionModels/src/models/Quote.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../../SE42/codeSamples/auctionRestservice/AuctionModels/src/models/User.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../../SE42/codeSamples/auctionRestservice/AuctionModels/src/models/Value.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../../SE42/codeSamples/auctionRestservice/src/main/java/com/auction/AuctionApplication.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../../SE42/codeSamples/auctionRestservice/src/main/java/com/auction/RegisterController.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../../SE42/codeSamples/auctionRestservice/src/main/java/com/auction/RegistrationController.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../../SE42/codeSamples/auctionRestservice/src/main/java/com/client/AuctionServiceClient.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../../SE42/webAuction/src/main/java/nl/auction/client/AuctionClient.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../../SE42/webAuction/web.iml">
           <value>
             <set />
           </value>

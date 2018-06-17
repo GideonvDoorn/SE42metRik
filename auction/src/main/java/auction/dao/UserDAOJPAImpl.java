@@ -1,5 +1,6 @@
 package auction.dao;
 
+import auction.domain.Category;
 import auction.domain.User;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -92,4 +93,6 @@ private EntityManager em;
         em.remove(user);
         em.getTransaction().commit();
     }
+
+
 }

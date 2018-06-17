@@ -1,5 +1,6 @@
 package auction.dao;
 
+import auction.domain.Category;
 import auction.domain.Item;
 import auction.domain.User;
 
@@ -97,5 +98,17 @@ public class ItemDAOJPAImpl implements ItemDAO
         em.getTransaction().begin();
         em.remove(item);
         em.getTransaction().commit();
+    }
+
+    public Category getCategoryById(int id) {
+        try{
+            Query findById = em.createQuery("SELECT a FROM Category AS a  WHERE a.id = :id");
+            findById.setParameter("id", id);
+
+            return (Category)findById.getSingleResult();
+        }
+        catch(NoResultException ex){
+            return null;
+        }
     }
 }

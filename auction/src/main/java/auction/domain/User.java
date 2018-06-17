@@ -1,9 +1,15 @@
 package auction.domain;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import com.sun.org.apache.xpath.internal.operations.Equals;
 
 import javax.persistence.Entity;
 import javax.persistence.*;
+import javax.xml.bind.annotation.XmlRootElement;
+import java.io.Serializable;
 import java.util.*;
 
 
@@ -15,6 +21,7 @@ import java.util.*;
         @NamedQuery(name = "User.getAll", query = "SELECT a FROM User AS a")
 
 })
+
 public class User {
 
     @Id
@@ -78,5 +85,10 @@ public class User {
     public int hashCode() {
 
         return Objects.hash(id, email, offeredItems);
+    }
+
+    @Override
+    public String toString() {
+        return id + " : " + email;
     }
 }

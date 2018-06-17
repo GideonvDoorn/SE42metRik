@@ -1,6 +1,7 @@
 package auction.service;
 
 import auction.dao.ItemDAOJPAImpl;
+import auction.domain.Category;
 import nl.fontys.util.Money;
 import auction.domain.Bid;
 import auction.domain.Item;
@@ -51,5 +52,11 @@ public class AuctionMgr  {
         DAO.edit(item);
 
         return newBid;
+    }
+
+
+    public Category getCategory(int id) {
+
+        return DAO.getCategoryById(id);
     }
 }
